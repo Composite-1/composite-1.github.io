@@ -12,11 +12,13 @@ body{
   }
   
   .logo{
+   display: inline;
     width: 3em;
-    height: 2.5em;
+    height: 2em;
   }
   
   .nonselected-item{
+    display: inline-block;
     margin: 1em 0;
     background-color: #3A3A3A;
     border:2px solid white;
@@ -26,31 +28,51 @@ body{
   }
   
   .selected-item{
+    display: inline-block;
     background-color: #FFE780;
     border:2px solid white;
     color:#3a3a3a;
     font-size: 1.25em;
+    padding: 0.5em 0.5em;
+
   }
   .header-section{
-    background-image: url(/img/pngtree.jpg);
+    background-image: url(../img/b1.jpeg);
+    margin: 0.5em 0;
     height: 10em;
-    width=100%;
+    width:100%;
     text-align: center;
-    color:white;
-    font-family: helvetica;
+    color:#ffffff;
     }
   
+    .announce{width: 100%;}
+
+
     .rectangle {
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
         background-color: #ffffff;
         /* display: inline-block; */
         overflow: hidden;
+        margin: 0.5em 0em;
         box-shadow: 0 0 1em black ;
-        margin: 1em 0;
-
+        padding: 0 1em;
+        /* height: 15em; */
       }
-  .h2-format{
-      color: #00BABF;
-  }
-  .p-format{
-      height: 0.7em;
-  }
+
+
+
+
+.h2-format{color: #00BABF;}
+
+.p-format{height: 0.6em;}
+
+.link-class{ 
+    color: #00BABF;
+    margin:1em;
+    padding: 0 1em 0 1em;
+}
+.members{
+    width: 10em;
+    height: 8em; 
+}
