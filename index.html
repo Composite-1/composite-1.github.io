@@ -1,98 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Antic&display=swap" rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8">
-    <title>BlackBoard Redesigned Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This site is a new and redesigned version for BlackBoard for the learning purposes">
-    <meta name="author" content="Humber student - IM">
-    <link rel="stylesheet" href="css/style.css?v1.0">
-    <link href="https://fonts.googleapis.com/css?family=Antic&display=swap" rel="stylesheet">
-</head>
+        <title>Black Board - redesigned by IM</title>
+    </head>
+    <body class="container">
+        <div class="sidebar">
+          <div>
+              <img class="sidebar-icon" src="img/admin.png" alt="">
+          </div>
+          <div>
+            <img class="sidebar-icon" src="img/dashboard.png" alt="">
+            </div>
+            <div>
+                <img class="sidebar-icon" src="img/courses.png" alt="">
+                </div>
+                <div>
+                    <img class="sidebar-icon" src="img/clnd.jpg" alt="">
+                    </div>
+            <svg class="sidebar-icon">
+                <use xlink:href="img/symbol-defs.svg#icon-envelop"></use>
+            </svg>
+            <svg class="sidebar-icon">
+                <use xlink:href="img/symbol-defs.svg#icon-cog2"></use>
+            </svg>
+            <svg class="sidebar-icon">
+                <use xlink:href="img/symbol-defs.svg#icon-anchor"></use>
+            </svg>
+        </div>
 
+        <header class="header">
+            <img src="img/logo.png" alt="Black Board logo" class="header__logo">
+            <a href="#">
+                <div class="header__tab">
+                    <div class="header__tab-number">113</div>
+                    <div class="header__tab-name">Applied Web Programming</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="header__tab">
+                    <div class="header__tab-number">114</div>
+                    <div class="header__tab-name">Applied Web Design</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="header__tab">
+                    <div class="header__tab-number">115</div>
+                    <div class="header__tab-name">Tools & Workflows</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="header__tab">
+                    <div class="header__tab-number">116</div>
+                    <div class="header__tab-name">Web Production Techniques</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="header__tab">
+                    <div class="header__tab-number">117</div>
+                    <div class="header__tab-name">Planning & Prototyping</div>
+                </div>
+            </a>
+        </header>
+        <section class="course">
+            <h2 class="course__name">117 Planning & Prototyping</h2>
+            <div class="course__details">
+                <p class="lecturer__name">Mr. Cory Coletta, M.Ed.</p>
+                <p class="lecturer__degree">Professor, Web design and Development</p>
+                <p class="lecturer__position">Faculty of media & Creative Arts</p>
+            </div>
+            <p class="course__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. </p>
+        </section>
+        <section class="announcements-box">
+            <div class="announcement__heading">
+                <h3 class="announcements__heading-name">Announcements</h3>
+                <svg class="announcements__heading-icon">
+                    <use xlink:href="img/symbol-defs.svg#icon-play-circle"></use>
+                </svg>
+            </div>
+            <div class="announcements__item">
+                <div class="announcements__item-date">Oct 2:</div>
+                <div class="announcements__item-content">New schedule for this week <span class="content__continue-char">&gt;</span></div>
+            </div>
+            <div class="announcements__item">
+                <div class="announcements__item-date">Oct 7:</div>
+                <div class="announcements__item-content">Grades! Grades! <span class="content__continue-char">&gt;</span></div>
+            </div>
+        </section>
+        <section class="details-box">
+            <div class="details__heading">
+                <h3 class="details__heading-name">Details</h3>
+            </div>
+            <div class="details__info">
+                    <div>Number: WDDM 117</div>
+                    <div>Starting date: Sept 1</div>
+                    <div>Ending date: Dec 23</div>
+                    <div>Passing grade: 65</div>
+            </div>
+            <div class="details__download-syllabus">
+                <svg class="details__download-syllabus-icon">
+                    <use xlink:href="img/symbol-defs.svg#icon-document-download"></use>
+                </svg>
+                <div class="download-syllabus">
+                    Download syllabus
+                </div>
+            </div>
+        </section>
+        <section class="calendar">
+                <div class="calendar__heading">
+                    <h3 class="calendar__heading-name">Calendar</h3>
+                    <svg class="calendar__heading-icon">
+                        <use xlink:href="img/symbol-defs.svg#icon-play-circle"></use>
+                    </svg>
+                </div>
+            <img src="/img/calendar.jpg" alt="Calendar">
+        </section>
+        <section class="grades">
+            <div class="grades__heading">
+                <h3 class="grades__heading-name">Grades</h3>
+                <svg class="grades__heading-icon">
+                    <use xlink:href="img/symbol-defs.svg#icon-play-circle"></use>
+                </svg>
+            </div>
+            <div class="grades__content">
+                <div class="grades__item">
+                    <img class="grades__item-figure" src="/img/img.jpg" alt="Grade figure">
+                    <div class="grades__item-text">
+                        Figma wire framing in-class assignment
+                    </div>
+                    <div class="grades__item-grade">
+                        <div class="grades__item-number">76</div>
+                        <div class="grades__item-avg">avg</div>
+                    </div>
+                </div>
+                <div class="grades__item">
+                    <img class="grades__item-figure" src="/img/img.jpg" alt="Grade figure">
+                    <div class="grades__item-text">
+                        Figma wire framing in-class assignment
+                    </div>
+                    <div class="grades__item-grade">
+                        <div class="grades__item-number">76</div>
+                        <div class="grades__item-avg">avg</div>
+                    </div>
+                </div>
+                <div class="grades__item">
+                    <img class="grades__item-figure" src="/img/img.jpg" alt="Grade figure">
+                    <div class="grades__item-text">
+                        Figma wire framing in-class assignment
+                    </div>
+                    <div class="grades__item-grade">
+                        <div class="grades__item-number">76</div>
+                        <div class="grades__item-avg">avg</div>
+                    </div>
+                </div>
+            </div>
 
-<body>
+        </section>
+        <section class="news-feed">
+            <div class="news-feed__heading">
+                <h3 class="news-feed__heading-name">News Feed</h3>
+                <svg class="news-feed__heading-icon">
+                    <use xlink:href="img/symbol-defs.svg#icon-play-circle"></use>
+                </svg>
+            </div>
+            <div class="news-feed__items">
+                <div class="news-feed__post">
+                    <div class="news-feed__post-avatar">
+                        <img src="/img/img.jpg" alt="Post avatar">
+                        <div class="news-feed__lecturer-name">Cory</div>
+                    </div>
+                    <div class="news-feed__post-date">Oct 14 15:33</div>
+                    <div class="news-feed__post-text">Posted Module 5 slides</div>
+                </div>
+                <div class="news-feed__post">
+                    <div class="news-feed__post-avatar">
+                        <img src="/img/img.jpg" alt="Post avatar">
+                        <div class="news-feed__lecturer-name">Cory</div>
+                    </div>
+                    <div class="news-feed__post-date">Oct 14 15:33</div>
+                    <div class="news-feed__post-text">Posted Module 5 slides</div>
+                </div>
+                <div class="news-feed__post">
+                    <div class="news-feed__post-avatar">
+                        <img src="/img/img.jpg" alt="Post avatar">
+                        <div class="news-feed__lecturer-name">Cory</div>
+                    </div>
+                    <div class="news-feed__post-date">Oct 14 15:33</div>
+                    <div class="news-feed__post-text">Posted Module 5 slides</div>
+                </div>
+                <div class="news-feed__post">
+                    <div class="news-feed__post-avatar">
+                        <img src="/img/img.jpg" alt="Post avatar">
+                        <div class="news-feed__lecturer-name">Cory</div>
+                    </div>
+                    <div class="news-feed__post-date">Oct 14 15:33</div>
+                    <div class="news-feed__post-text">Posted Module 5 slides</div>
+                </div>
+            </div>
 
-    <!-- Top menu -->
-    <img src="img/logo2.png" class="logo" alt="BB logo">
-    <section class="top-menu">
-        <main class="top-menu">
-            <div class="nonselected-item">113</div>
-            <div class="nonselected-item">114</div>
-            <div class="nonselected-item">115</div>
-            <div class="nonselected-item">116</div>
-            <div class="selected-item">117</div>
-            </article>
-    </section>
-
-    <!-- Header section for the 117 -->
-    <section class="header-section">
-        <h1>117 Planning and Prototyping</h1>
-        <h2 class="h2-format"> Mr Cory Coletta, M.Ed.</h2>
-        <p>Professor, Web Design & Development. Faculty of Media & Creative Arts</p>
-        <a href="#" class="btn-header">Read more ></a>
-    </section>
-
-
-    <!-- Announcements -->
-    <article class="rectangle announce">
-        <h2 class="h2-format">Announcements</h2>
-        <p class="p-format">Oct2: New schedule for the week ></p>
-        <p class="p-format">Oct7: Grades are here! ></p>
-    </article>
-    <!-- Details -->
-    <!-- <article class="rectangle">
-        <h2 class="h2-format">Details </h2>
-        <p class="p-format">Number: WDDM 117 Fall 2019</p>
-        <p class="p-format">Starting date: Sept 1</p>
-        <p class="p-format">Ending date: Dec 23</p>
-        <p class="p-format">Passing grade:65</p>
-        <img src="img/important-doc.png" class="logo" alt="Syllabus">
-        <a href="#" class="link-class" >Download syllabus ></a>
-    </article> -->
-
-    <!-- calendar -->
-    <article class="rectangle">
-        <h2 class="h2-format">Academic calendar </h2>
-        <img src="img/Calendar.png" class="members" alt="Calendar">
-
-    </article>
-
-
-
-
-    <!-- Members -->
-    <article class="rectangle">
-        <h2 class="h2-format">Members </h2>
-        <img src="img/icons-family.jpg" class="members" alt="Team members">
-    </article>
-
-    <!-- calendar -->
-    <article class="rectangle">
-        <h2 class="h2-format">Academic calendar </h2>
-
-        <img src="img/Calendar.png" class="members" alt="Calendar">
-    </article>
-
-    <!-- Grades -->
-    <article class="rectangle">
-        <h2 class="h2-format">Grades </h2>
-        <img src="img/80.png" class="logo" alt="Grades">
-        <p>Figma wire framing in-class assignment</p>
-        <a href="#" class="link-class">More grades ></a>
-
-    </article>
-
-    <!-- resources -->
-    <article class="rectangle-small announce">
-        <h2 class="h2-format">Resources </h2>
-        <img src="img/r1.png" class="logo" alt="docs">
-        <img src="img/r2.png" class="logo" alt="chat">
-        <img src="img/r3.png" class="logo" alt="todo">
-        <img src="img/r4.png" class="logo" alt="inbox">
-
-    </article>
-test
-</body>
+        </section>
+        <section class="members">
+            <div class="members__heading">
+                <h3 class="members__heading-name">Members</h3>
+                <div class="members__avatar-container">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                    <img src="/img/img.jpg" alt="Post avatar">
+                </div>
+            </div>
+        </section>
+        <section class="resources">
+            <div class="resources__heading">
+                <h3 class="resources__heading-name">Resources</h3>
+            </div>
+            <div class="resources__container">
+                <svg class="resources__item">
+                    <use xlink:href="img/symbol-defs.svg#icon-inbox-filled"></use>
+                </svg>
+                <svg class="resources__item">
+                    <use xlink:href="img/symbol-defs.svg#icon-inbox-filled"></use>
+                </svg>
+                <svg class="resources__item">
+                    <use xlink:href="img/symbol-defs.svg#icon-inbox-filled"></use>
+                </svg>
+                <svg class="resources__item">
+                    <use xlink:href="img/symbol-defs.svg#icon-inbox-filled"></use>
+                </svg>
+            </div>
+        </section>
+    </body>
